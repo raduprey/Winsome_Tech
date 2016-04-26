@@ -1,0 +1,31 @@
+blockquote {
+    font: {
+        family: Merriweather, Georgia, serif;
+        style: italic;
+    }
+    margin: 20px 0;
+}
+
+@media (min-width: 768px) {
+    blockquote {
+        padding: 10px 0 10px 40px;
+        position: relative;
+
+        &:before {
+            color: #e4e4e4;
+            color: rgba(83, 83, 83, 0.2);
+            content: "\201C";
+            @include font-size(7.4);
+            font: {
+                family: Georgia, "Times New Roman", serif;
+                style: normal;
+            }
+            line-height: 1;
+            height: 60px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    }
+}

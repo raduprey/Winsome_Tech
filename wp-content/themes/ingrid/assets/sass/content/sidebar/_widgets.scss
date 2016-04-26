@@ -1,0 +1,40 @@
+/* Search */
+.searchform {
+    position: relative;
+
+    .fa {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+}
+
+/* Calendar Widget */
+.widget.widget_calendar {
+    table {
+        background: #3d3d3d;
+        border-collapse: collapse;
+
+        > caption {
+            @include font-size(1.0);
+            font: {
+                family: $font_secondary;
+                weight: bold;
+            }
+            letter-spacing: .2em;
+            text-transform: uppercase;
+        }
+
+        th {
+            background: black;
+            border: none;
+            color: inherit;
+        }
+
+        td {
+            border-color: #595959;
+            padding: 3px;
+            text-align: center;
+        }
+    }
+}

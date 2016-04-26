@@ -1,0 +1,40 @@
+#masthead {
+    clear: both;
+
+    .flowers {
+        display: block;
+        margin: -1px auto 0;
+    }
+}
+
+.site-title {
+    @include font-size(8.0);
+    font: {
+        family: Cookie, cursive;
+        weight: normal;
+    }
+    letter-spacing: 0;
+    line-height: 1;
+    margin: 0;
+    text-transform: none;
+
+    a {
+        color: #000;
+
+        &:hover {
+            color: #000;
+        }
+    }
+}
+
+.site-description {
+    color: #aaaaaa;
+    font: {
+        family: $font_secondary;
+        size: 10px;
+        weight: bold;
+    }
+    letter-spacing: .2em;
+    margin-top: 0;
+    text-transform: uppercase;
+}

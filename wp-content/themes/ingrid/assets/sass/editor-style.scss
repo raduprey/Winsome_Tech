@@ -1,0 +1,23 @@
+@import "variables/variables";
+@import "mixins/mixins";
+
+body {
+    max-width: 630px;
+}
+
+/*--------------------------------------------------------------
+Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
+@import "typography/headings";
+@import "navigation/links";

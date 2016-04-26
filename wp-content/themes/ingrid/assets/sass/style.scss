@@ -1,0 +1,99 @@
+/*
+Theme Name: Ingrid
+Theme URI: https://shop.nosegraze.com/product/ingrid-theme/
+Author: Anna Moore and Nose Graze
+Author URI: http://thelovelydesign.co/
+Description: A simple, feminine theme without a sidebar.
+Version: 1.0.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ingrid
+Tags: one-column, responsive-layout, custom-header, custom-menu, editor-style, featured-image-header, featured-images, threaded-comments, translation-ready, black, green, pink, white
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Ingrid is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Typography
+    1.1 Headings
+    1.2 Blockquotes
+2.0 Elements
+    2.1 Buttons
+    2.2 Captions
+    2.3 Galleries
+    2.4 Horizontal Rules
+    2.5 Lists
+    2.6 Tables
+3.0 Forms
+4.0 Navigation
+    4.1 Links
+    4.2 Menus
+    4.3 Pagination
+5.0 Accessibility
+6.0 Alignments
+7.0 Clearings
+8.0 Content
+    8.1 Header
+    8.3 Posts and Pages
+    8.4 Comments
+    8.5 Widgets
+    8.6 404 Error Page
+    8.7 Footer
+9.0 Plugins
+    9.1 Naked Social Share
+    9.2 Ultimate Book Blogger
+--------------------------------------------------------------*/
+
+@import "variables/variables";
+@import "mixins/mixins";
+
+/*--------------------------------------------------------------
+1.0 Typography
+--------------------------------------------------------------*/
+@import "typography/typography";
+
+/*--------------------------------------------------------------
+2.0 Elements
+--------------------------------------------------------------*/
+@import "elements/elements";
+
+/*--------------------------------------------------------------
+3.0 Forms
+--------------------------------------------------------------*/
+@import "forms/forms";
+
+/*--------------------------------------------------------------
+4.0 Navigation
+--------------------------------------------------------------*/
+@import "navigation/navigation";
+
+/*--------------------------------------------------------------
+5.0 Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+
+/*--------------------------------------------------------------
+6.0 Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+7.0 Clearings
+--------------------------------------------------------------*/
+@import "modules/clearings";
+
+/*--------------------------------------------------------------
+8.0 Content
+--------------------------------------------------------------*/
+@import "content/content";
+
+/*--------------------------------------------------------------
+9.0 Plugins
+--------------------------------------------------------------*/
+@import "plugins/plugins";

@@ -1,0 +1,214 @@
+article.post,
+article.page,
+section.error-404,
+.box {
+    border: 1px solid #e5e5e5;
+    margin: 20px 0 60px;
+    padding: 0 20px;
+
+    &.sticky {
+        border-color: $color_post-titles;
+
+        .entry-header,
+        .tagged {
+            border-bottom-color: $color_post-titles;
+        }
+
+        .entry-footer {
+            border-top-color: $color_post-titles;
+        }
+    }
+
+    .entry-header {
+        border-bottom: 1px solid #e5e5e5;
+        clear: both;
+        margin: 0 -20px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .entry-title {
+        color: $color_post-titles;
+        @include font-size(3.1);
+        font: {
+            family: $font_secondary;
+            weight: 300;
+        }
+        letter-spacing: 0;
+        line-height: 1;
+        margin: 0;
+        padding: 20px 20px 18px;
+        text-transform: uppercase;
+
+        a {
+            color: $color_post-titles;
+        }
+
+        @media (min-width: 768px) {
+            margin: 0 61px 0 0;
+        }
+    }
+
+    .taxonomy-description,
+    .search-description {
+        border-top: 1px solid #e5e5e5;
+        margin: 0 -20px;
+        padding: 0 20px;
+    }
+
+    .post-meta {
+        @include font-size(1.0);
+        font: {
+            family: $font_secondary;
+            weight: 600;
+        }
+        line-height: 1;
+        text-align: center;
+
+        span {
+            display: block;
+        }
+
+        a {
+            color: #aaaaaa;
+            display: block;
+            padding: 20px 25px;
+        }
+
+        @media (max-width: 767px) {
+            background: #fafafa;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        @media (min-width: 768px) {
+            float: right;
+            width: 61px;
+
+            &:before {
+                background: #fafafa;
+                border-left: 1px solid #e5e5e5;
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 61px;
+                height: 100%;
+                z-index: -1;
+            }
+        }
+    }
+
+    /* Post Content */
+    .entry-content {
+        padding: 20px 0;
+    }
+
+    .featured-image-wrap {
+        margin: -20px -20px 20px;
+    }
+
+    /* Footer */
+    .entry-footer {
+        border-top: 1px solid #e5e5e5;
+        color: #707070;
+        @include font-size(1.0);
+        font: {
+            family: $font_secondary;
+            weight: bold;
+        }
+        letter-spacing: .2em;
+        margin: 0 -20px;
+        padding: 20px;
+        position: relative;
+        text-transform: uppercase;
+
+        > .clear {
+            overflow: hidden;
+
+            > div {
+                text-align: center;
+            }
+        }
+
+        .ingrid-social-share {
+            @media (min-width: 768px) {
+                float: left;
+                text-align: left;
+            }
+        }
+
+        .comment-link {
+            @media (min-width: 768px) {
+                float: right;
+                padding-right: 50px;
+                text-align: right;
+            }
+        }
+
+        @media (min-width: 768px) {
+
+            &:after {
+                background: url('assets/images/flower-post.png') no-repeat center;
+                content: "";
+                display: block;
+                width: 119px;
+                height: 124px;
+                position: absolute;
+                right: -72px;
+                bottom: -36px;
+            }
+        }
+    }
+
+    .tagged {
+        border-bottom: 1px solid #e5e5e5;
+        color: #CCC;
+        font: {
+            family: Merriweather, serif;
+            style: italic;
+            weight: normal;
+        }
+        letter-spacing: .1em;
+        margin: -10px -20px 20px;
+        padding: 0 20px 10px;
+        text-transform: none;
+
+        a {
+            color: #CCC;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+/* Pages Only */
+
+article.page {
+    .entry-title {
+        @media (min-width: 768px) {
+            margin: 0;
+        }
+    }
+}
+
+
+/* Search Results */
+body.search {
+    .page-title {
+        span {
+            color: black;
+        }
+    }
+
+    .search-description {
+        margin-bottom: 20px;
+
+        .fa {
+            top: 13px;
+            right: 13px;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+/* Archive Pagination */
+.pagination {
+    margin: 40px 0;
+
+    > li {
+
+        > a {
+            background: none;
+            border-color: transparent;
+            border-radius: 0 !important;
+
+            &:hover,
+            &:active,
+            &:focus {
+                background: none;
+                border-color: transparent transparent #dedede;
+            }
+        }
+
+        &.current > a,
+        &.current > a:hover,
+        &.current > a:focus,
+        &.current > a:active {
+            background: none;
+            border-color: transparent transparent #dedede;
+            color: #a6a6a6;
+        }
+    }
+}
+
+/* Infinite Scroll */
+body.infinite-scroll {
+    .wp-prev-next {
+        display: none;
+    }
+}
+
+#infinite-handle {
+    margin: 40px 0;
+    text-align: center;
+
+    span {
+        background: #f7f7f7;
+        border-radius: 0;
+        display: inline-block;
+        padding: 0;
+        width: 100%;
+
+        button {
+            color: #726f6a;
+            display: inline-block;
+            font: {
+                family: $font_secondary;
+                weight: bold;
+            }
+            @include font-size(1.0);
+            letter-spacing: .2em;
+            padding: 20px 0;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.infinite-loader {
+    margin: 40px 0;
+    text-align: center;
+}
+
+/* Next/Previous Post Pagination */
+.wp-prev-next {
+    margin: 40px 0;
+
+    ul {
+        clear: both;
+        list-style: none;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .next-link {
+        float: left;
+    }
+
+    .prev-link {
+        float: right;
+    }
+
+    .next-link,
+    .prev-link {
+        width: 40%;
+    }
+
+    a {
+        background: #f7f7f7;
+        color: #726f6a;
+        display: block;
+        font: {
+            family: $font_secondary;
+            weight: bold;
+        }
+        @include font-size(1.0);
+        letter-spacing: .2em;
+        padding: 20px 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}

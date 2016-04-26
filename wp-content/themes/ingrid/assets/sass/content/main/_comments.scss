@@ -1,0 +1,196 @@
+.comments-title {
+    border-bottom: 1px solid #e5e5e5;
+    color: #7f7f7f;
+    @include font-size(3.2);
+    line-height: 1;
+    margin: 0 -20px 0;
+    padding: 20px 20px 18px;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+
+    @media (min-width: 768px) {
+        padding: 20px 0 18px 20px;
+    }
+
+    > span {
+        @media (min-width: 768px) {
+            color: #aaaaaa;
+            display: block;
+            float: right;
+            font: {
+                weight: 600;
+            }
+            text-align: center;
+            width: 61px;
+
+            &:before {
+                background: #fafafa;
+                border-left: 1px solid #e5e5e5;
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 61px;
+                height: 100%;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+.comment-list {
+    list-style: decimal-leading-zero;
+    margin: 40px 20px 0 20px;
+    padding: 0;
+
+    .comment {
+        background: white;
+        margin: 0 0 32px 0;
+        padding: 0 12px 12px 12px;
+        position: relative;
+
+        &.bypostauthor {
+            > .comment-body {
+                .comment-author,
+                .comment-meta {
+                    border-color: $color_links;
+                }
+
+                .fn, .fn a {
+                    color: $color_links;
+                }
+            }
+        }
+
+        &.depth-2 {
+            background: #F6F6F6;
+        }
+    }
+
+    .avatar {
+        float: left;
+        margin: 0 6px 0 0;
+
+    }
+
+    .comment-author {
+        border-top: 1px solid #e5e5e5;
+        @include font-size(2.0);
+        font: {
+            weight: 300;
+        }
+        padding: 8px 0 0 6px;
+    }
+
+    .fn,
+    .says,
+    .comment-meta {
+        @include font-size(2.0);
+        font: {
+            family: $font_secondary;
+            weight: normal;
+        }
+        letter-spacing: .1em;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+
+    .comment-meta {
+        border-bottom: 1px solid #e5e5e5;
+        @include font-size(1.0);
+        margin: -6px 0 0 0;
+        padding: 0 0 10px 6px;
+
+        a {
+            color: #AAA;
+        }
+    }
+
+    p {
+        margin: 12px 6px;
+    }
+
+    .reply {
+        a {
+            color: black;
+            @include font-size(1.0);
+            font: {
+                weight: bold;
+            }
+            letter-spacing: .1em;
+            margin: 0 0 32px 6px;
+            text-transform: uppercase;
+        }
+    }
+
+    .children {
+        list-style: none;
+        margin: 0 0 24px 0;
+        padding: 0;
+
+        li {
+            margin: 12px 0 0 0;
+            padding: 24px 12px 12px 12px;
+        }
+    }
+}
+
+/* Form */
+#respond {
+    #reply-title {
+        border-bottom: 1px solid #e5e5e5;
+        color: #7f7f7f;
+        @include font-size(3.2);
+        line-height: 1;
+        margin: 0 -20px 0;
+        padding: 20px 20px 18px;
+        position: relative;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    .comment-notes,
+    .logged-in-as {
+        color: #707070;
+        @include font-size(1.0);
+        font: {
+            family: $font_secondary;
+            weight: bold;
+        }
+        letter-spacing: .2em;
+        margin: 0 -20px;
+        padding: 20px;
+        position: relative;
+        text-transform: uppercase;
+    }
+
+    input[type="text"] {
+        letter-spacing: .05em;
+
+        &::-webkit-input-placeholder {
+            text-transform: uppercase;
+        }
+        ::-moz-placeholder {
+            text-transform: uppercase;
+        }
+    }
+
+    .form-group {
+        margin: 12px 0;
+    }
+
+    textarea {
+        letter-spacing: .01em;
+    }
+}
+
+#submit {
+    background: #fba99c;
+    border: none;
+    color: white;
+    font: {
+        family: $font_secondary;
+        weight: bold;
+    }
+}
