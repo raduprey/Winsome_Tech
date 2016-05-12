@@ -10,7 +10,7 @@
 			               <?php query_posts('posts_per_page=1&post_type=portfolio'); ?>
 			                <?php while ( have_posts() ) : the_post();
 			                $image_1 = get_field("image_1");
-			                $size = "medium";
+			                $size = "full";
 			             ?>
                           <figure>
                           <?php echo wp_get_attachment_image($image_1, $size); ?>
