@@ -1,11 +1,4 @@
 <?php
-/**
- * The template for displaying all single posts.
- *
- * @package   ingrid
- * @copyright Copyright (c) 2015 Ashley Evans and Anna Moore
- * @license   GPL2
- */
 
 get_header(); ?>
 
@@ -14,7 +7,7 @@ get_header(); ?>
 	<?php /* Start the Loop */ ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 
-		<?php get_template_part( 'inc/template-parts/content', get_post_format() ); ?>
+		<?php get_template_part( 'page.php', get_post_format() ); ?>
 
 		<?php
 		// If comments are open or we have at least one comment, load up the comment template.
